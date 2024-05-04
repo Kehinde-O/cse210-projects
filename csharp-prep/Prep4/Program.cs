@@ -15,9 +15,9 @@ class Program
             Console.Write("Enter  number: ");
             single_number = int.Parse(Console.ReadLine());
             if(single_number != 0){
+                sum += single_number;
                 list_of_numbers.Add(single_number);
                 for(int i = 0; i < list_of_numbers.Count; i++){
-                    sum += list_of_numbers[i];
                     if(list_of_numbers[i] > max){
                         max = list_of_numbers[i];
                     }
@@ -33,7 +33,7 @@ class Program
         Console.WriteLine($"The largest number is: {max}");
         Console.WriteLine($"The smallest positive number is: {smallest_positive}");
         list_of_numbers.Sort();
-        Console.WriteLine("The list of numbers is: ");
+        Console.WriteLine("The sorted list is: ");
         for(int i = 0; i < list_of_numbers.Count; i++){
             Console.WriteLine($"{list_of_numbers[i]} ");
         }
