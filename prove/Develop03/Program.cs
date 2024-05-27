@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-    static List<Scripture> _scriptures = new List<Scripture>();
+    private static List<Scripture> _scriptures = new List<Scripture>();
     static void Main(string[] args)
     {
         ///////Added Challenge to exceed requirement, Added a feature to hide only visible words
