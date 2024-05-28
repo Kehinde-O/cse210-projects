@@ -2,6 +2,9 @@ using System;
 
 class Program
 {
+    ////Added creativity
+    ////Added a check to see if the input for ListingActivity is not empty and if it has not been already been entered, i.e making sure ListingActivity contains unique entry
+    /////Added a check to make sure that random questions in ReflectingActivity never shows 2 times, i.e when a question is asked, it is not repeated
     static void Main(string[] args)
     {
         string menuChoice = "0";

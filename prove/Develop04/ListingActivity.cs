@@ -21,7 +21,7 @@ class ListingActivity : Activity{
         ShowCountdown(3);
         Console.WriteLine();
         List<string> responses = GetListFromUser();
-        Console.WriteLine("You have listed " + responses.Count + " items!");
+        Console.WriteLine("You have listed " + responses.Count + " unique items!");
     }
 
     public void Run(){
@@ -47,8 +47,11 @@ class ListingActivity : Activity{
         DateTime endTime = startTime.AddSeconds(_duration);
         while (DateTime.Now < endTime){
             Console.Write("> ");
-            responses.Add(Console.ReadLine());
-            _count += 1;
+            string word = Console.ReadLine();
+            if(!responses.Contains(word) && word != ""){
+                responses.Add(word);
+                _count += 1;
+            }
         }
         return responses;
     }
