@@ -1,0 +1,5 @@
+950
+SimpleGoal|Do an Elders Quorum Activity|Plan an Elders Quorum activity where men can meet together to teach eachother good skills|10|True
+ChecklistGoal|Give Ward Council Report|Report my assignments back to the ward council for deliberation|230|True|2|2|200
+ChecklistGoal|Speak to Missionaries|Have a conversation with the missionaries to identify the challenges they are facing|540|True|2|2|500
+EternalGoal|Scripture Study Daily|Study the scripture everyday for spiritual growth|25|False
